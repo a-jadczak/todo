@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    height: 100vh;
+
+    padding: .2em;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.quest-container
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quest
+{
+    list-style-type: none;
+    
+    padding: .5em;
+    border: 2px solid #646cff6e;
+    border-radius: 1em;
+
+    transition: .2s;
+
+    margin-bottom: .25em;
+    transition: .2s;
+
+    width: 50%;
+}
+
+
+
+@media (max-width: 768px) 
+{
+    .quest
+    {
+        width: 100%;
+    }
+}
+
+.quest-done
+{
+    text-decoration: line-through;
+    border: 2px solid lawngreen;
+    background-color: rgba(126, 252, 0, 0.206);
+}
+
+.quest-deleted
+{
+    background-color: crimson;
+}
+
+
+.quest > *
+{
+    margin: .25em;
+}
+
+
+.questInput
+{
+    font-size: 1.75em;
+    padding: .2em;
+    border-radius: .25em;
+
+    background-color: transparent;
+    border: 2px solid #646cffaa;
+}
+
+
+.quest span
+{
+    font-size: 1.25em;
+    display: block;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;   
+}
+
+.button-done:hover
+{
+    border-color: lawngreen;
+    color: lawngreen;
+}
+
+.button-delete:hover
+{
+    border-color: crimson;
+    color: crimson;
+}
+
+
+form 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, form > button, label
+{
+    margin-top: .55em;
+    margin-bottom: .15em;
+}
+
+label, select
+{
+    font-size: 1.25em;
+}
+
+select
+{
+   
+}
